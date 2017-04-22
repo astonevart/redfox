@@ -82,7 +82,7 @@ header h3{
 }
 .bottom{
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 127px;
 
 }
 .bottom span{
@@ -135,6 +135,8 @@ header h3{
     background-color: #e2e4e6;
     padding: 30px 40px;
     border-radius: 8px;
+    width: 90%;
+
 }
 .price h4{
     color: #000000;
@@ -173,20 +175,26 @@ header h3{
 }
 .tv{
     background-color: #c5c7c9;
-    width: 680px;
-    height: 680px;
-    border-radius: 340px;
     text-align: center;
-    line-height: 680px;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+
 }
-.col-img{
-    float: left;
-    margin-right: 80px;
-    margin-left: 30px;
+.tv img{
+margin-top: -160px;
+    max-width: 70%;
+    height: auto;
+}
+.col-img {
+
+
 }
 
 .col-text{
-    float: left;
+
 }
 .howwork {
     background: url("../img/how.jpg") center no-repeat;
@@ -268,6 +276,8 @@ header h3{
     -ms-transform: skewY(4deg);
     -o-transform: skewY(4deg);
     transform: skewY(4deg);
+    position: relative;
+    top: -47px;
 
 
 
@@ -282,7 +292,7 @@ header h3{
     -o-transform: skewY(-5deg);
     transform: skewY(-5deg);
     position: relative;
-    top: -260px;
+    top: -268px;
 
 
 
@@ -293,6 +303,7 @@ header h3{
     text-align: center;
     position: relative;
     width: 100%;
+    margin-top: 30px;
 
 
 
@@ -526,7 +537,7 @@ header h3{
     border-radius: 25px;
 }
 .feed{
-    height: 1095px;
+    height: auto;
 
 }
 .feed h2{
@@ -595,7 +606,7 @@ header h3{
 
 }
 .fedshow .text{
-    width: 50%;
+    width: 40%;
     float: left;
     margin-left: 20px;
 }
@@ -631,6 +642,10 @@ header h3{
 .active{
     display: block;
 }
+.fedshow img{
+    max-width: 100%;
+    height: auto;
+}
 #carousel p{
 
     display: inline-block;
@@ -644,6 +659,8 @@ header h3{
     height: 350px;
     background-color: #35434b;
     position: relative;
+    margin-top: 10%;
+
 }
 .footer-logo-number{
     padding-top: 90px;
@@ -658,7 +675,75 @@ header h3{
     margin-right: 10px;
 }
 
+.left_text_1:before{
+    content: "Вы оставляете нам заявку";
+    font-size: 22px;
+    position: absolute;
+    text-align: right;
+    width: 200px;
+    margin-left: -250px;
+    margin-top: 25px;
+    color: #fff;
+}
+.right_text_2:after{
+    content: "Наши консультанты связываются с Вами.";
+    font-size: 22px;
+    position: absolute;
+    text-align: left;
+    width: 250px;
+    margin-left: 45px;
+    margin-top: 25px;
+    color: #fff;
+}
+.left_text_3:before{
+    content: "Мы обсуждаем все детали вашего лендинга";
+    font-size: 22px;
+    position: absolute;
+    text-align: right;
+    width: 200px;
+    margin-left: -250px;
+    margin-top: 25px;
+    color: #fff;
+}
 
+.right_text_4:after{
+    content: "Вы вносите предоплату после согласования с вами дизайна";
+    font-size: 22px;
+    position: absolute;
+    text-align: left;
+    width: 250px;
+    margin-left: 45px;
+    margin-top: 25px;
+    color: #fff;
+}
+.left_text_5:before{
+    content: "Вы получаете готовый лендинг и платите остальную сумму";
+    font-size: 22px;
+    position: absolute;
+    text-align: right;
+    width: 200px;
+    margin-left: -250px;
+    margin-top: 25px;
+    color: #fff;
+}
+.howwork p{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50px;
+    color: #000;
+    font-size: 71px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: inline-block;
+}
+.howwork h5{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 7px auto;
+}
 
 
 
