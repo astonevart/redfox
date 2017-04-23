@@ -21,7 +21,7 @@
         </div>
         <div class="call">
             <p>+7 (999) 608 11 60</p>
-            <div class="bottom-header">Заказать звонок</div>
+            <div class="bottom-header"><a href="#" id="go">Заказать звонок</a></div>
         </div>
     </div>
     <div class="header-main">
@@ -303,6 +303,20 @@
         <div class="bottom-header">Заказать звонок</div>
     </div>
 </div></section>
+
+
+<div id="modal_form"><!-- Сaмo oкнo --> 
+      <span id="modal_close"> X</span> <!-- Кнoпкa зaкрыть --> 
+       <div class="img-modal"><img src="img/logo-modal.png" width="60px" height="60px"></div>
+       <form action="index1.php" method="post" id="order_call_form">
+        <input class="popup_window__input" type="text" name="name" placeholder="Ваше имя" />
+        <input class="popup_window__input" type="text" name="phone" placeholder="Ваш телефон" />
+        <input class="popup_window__input" type="text" name="email" placeholder="Ваш e-mail" />
+        <input type="submit" class="btn_submit_form" value="Отправить заявку" />
+</form>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+
 <script src="js/modernizr.custom.17475.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

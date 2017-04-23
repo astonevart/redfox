@@ -4,7 +4,17 @@ body{
     font-weight: 400;
     min-width: 320px;
 }
-
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    text-decoration: none
+}
+a:focus{
+    color: inherit;
+    text-decoration: none
+}
 header{
     background: url("../img/header.png") center no-repeat;
     background-size: cover;
@@ -745,6 +755,60 @@ margin-top: -160px;
     margin: 7px auto;
 }
 
+#modal_form {
+    width: 400px; 
+    height: 500px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    border-radius: 10px;
+    background: #38545c;
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -200px;
+    margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -20px;
+    right: -21px;
+    cursor: pointer;
+    display: block;
+    background: #000;
+    padding-left: 8px;
+    padding-top: 2px;
+    border-radius: 12px;
+}
+/* Пoдлoжкa */
+#overlay {
+    z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.7; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=70);
+    width:100%; 
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    cursor:pointer;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+.img-modal{
+
+    display: inline-block;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 40px;
+}
 
 
 
